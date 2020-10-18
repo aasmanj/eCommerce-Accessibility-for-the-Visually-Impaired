@@ -10,5 +10,4 @@ function check_cart() {
     document.querySelectorAll('input')
 
 }
-// sum the prices and speak them
 
