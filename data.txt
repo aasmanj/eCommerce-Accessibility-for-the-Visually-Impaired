@@ -1,0 +1,8 @@
+name: John Doe
+address: 123 Baker Street
+city: Bakersfield
+state: NC
+16 digit: 1234 1234 5678 5678
+Expiration: 06/25
+CVV: 290
+Zip: 25565

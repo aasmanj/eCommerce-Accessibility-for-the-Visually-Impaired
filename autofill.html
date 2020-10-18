@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<a href="#" onClick="autoFill(); return true;" >Click this button to autofill name, address, and card information</a>
+<form>
+	<p>
+		<fieldset>
+    	<label>Name: </label>
+		<input type="text" id="input_name">
+		<label>Street: </label>
+		<input type="text" id="input_street">
+		<label>City: </label>
+		<input type="text" id="input_city">
+		<label>State: </label>
+		<input type="text" id="input_state">
+		<label>Zip: </label>
+		<input type="text" id="input_zip">
+		<label>Phone: </label>
+		<input type="text" id="input_phone">
+		<label>Card Number: </label>
+		<input type="text" id="input_card">
+		<label>Expiration: </label>
+		<input type="text" id="input_expiration">
+		<label>CVV: </label>
+		<input type="text" id="input_cvv">
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange="copyingFunction()" />
+		<label for="same">Same Billing Address?</label>
+		<fieldset>
+		<label>Billing Address: </label>
+		<input type="text" id="billing_street">
+		<input type="text" id="billing_city">
+		
+		</fieldset>
+		<input type="submit" value="Verify" />
+ 	</p>
+	 <script type="text/javascript">
+	 
+		function autoFill() {
+		 document.getElementById('input_name').value = "John Doe"
+		 document.getElementById('input_street').value = "123 Broadway St"
+		 document.getElementById('input_city').value = "Brooklyn"
+		 document.getElementById('input_state').value = "NY"
+		 document.getElementById('input_zip').value = "12344"
+		 document.getElementById('input_phone').value = "123456789"
+		 document.getElementById('input_card').value = "12345678900000"
+		 document.getElementById('input_expiration').value = "01/25"
+		 document.getElementById('input_cvv').value = "876"
+		}
+	function copyingFunction() {
+		if (document.getElementById('same').checked) {
+    		var billing_street = document.getElementById('input_street').value;
+        	var billing_city = document.getElementById('input_city').value;
+        	document.getElementById('billing_street').value = billing_street;
+        	document.getElementById('billing_city').value = billing_city;
+
+    } 	else {
+        	document.getElementById('billing_street').value = "";
+        	document.getElementById('billing_city').value = "";
+    }
+}
+	</script>
+</form>
+</html>
+
+// tester function to check 
+
+// loop through and double check from venmo, paypal etc.

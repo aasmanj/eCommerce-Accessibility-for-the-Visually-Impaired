@@ -1,0 +1,22 @@
+{
+
+	"manifest_version": 2,
+	"name": "eCommerce Accessibility for the Visually Impaired",
+	"short_name": "eComm Access",
+	"version": "1.0",
+	"permissions": [
+		"activeTab"
+	],
+	"content_security_policy": "script-src 'self'; object-src 'apis.google.com'",
+	"description": "Implements text to speech and autofill for credit card information",
+	"icons": { "48": "icon48.jpg"
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "icon16.jpg",
+			"48": "icon48.jpg"
+		},
+		"default_title": "Text to speech and autofill extension",
+		"default_popup" : "autofill.html"
+	}
+}
